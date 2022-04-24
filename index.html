@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T0d0-App</title>
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">To Do.</h1>
+        <h2 class="header__subtitle">What do you need to do?</h2>
+      </div>
+    </header>
+
+    <div class="actions">
+      <div class="actions__container">
+        <input
+          id="search-text"
+          class="input"
+          type="text"
+          placeholder="Find A To Do"
+        />
+        <label for="hide-completed" class="checkbox">
+          <input type="checkbox" name="" id="hide-completed" />Hide Completed
+        </label>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="todos"></div>
+      <form id="new-todo" action="">
+        <input
+          type="text"
+          class="input input__color"
+          placeholder="Enter something to do"
+          name="newTodo"
+        />
+        <button class="button">Add To Do</button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src="./scripts/todo-functions.js"></script>
+    <script src="./scripts/todo-app.js"></script>
+  </body>
+</html>
